@@ -105,6 +105,8 @@ public:
 
  private:
   int n_sig_;
+  MatrixXd R_Radar_;
+  MatrixXd R_Lidar_;
   void NormalizeAngle(double *angle);
   void AugmentedSigmaPoints(MatrixXd* Xsig_out);
   void SigmaPointPrediction(MatrixXd Xsig_aug, double delta_t);
